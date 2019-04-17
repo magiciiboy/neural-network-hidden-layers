@@ -6,3 +6,7 @@ I was inspired by the post by Jeff Heaton at https://www.heatonresearch.com/2017
 
 I conducted some experiment to extract the insight of performance corresponding with 
 variable sizes.
+
+## Experiment #1: ##
+
+![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp1.png?raw=true)
