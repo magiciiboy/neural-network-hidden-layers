@@ -53,6 +53,11 @@ This structure generates following results:
 - `R-squared (Pred)`: 0.9002130472935612
 - `MSE`: 3336.8798909376187
 
+In fact, for this dataset, the performance peak when using `Random Forest`:
+
+- `R-squared`: 0.9916119677601978
+- `R-squared (Pred)`: 0.9403197838814934
+
 ## Experiment with variable number of nodes in each hidden layer ##
 
 I was trying to looking for a simpler version of structure which can generate the same as the acceptable result as above by using some rule-of-thumb methods suggested by Jeff Heaton. I tried to reduce the number of layers.
@@ -105,11 +110,13 @@ Use: 2 hidden layers, suggested by **Gnana Sheela and Deepa**
 
 ### Experiment #7: ###
 
-Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6
+Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6, 7
 
-![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp7C.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp7F.png?raw=true)
 
 
 ## Conclusion ##
 
-- `N = 2 * n + 1` works with number of hidden layers equal to 5. It achieves R-squared score at **0.8926** (target is **0.9002**). `MSE` is **3588.2767** (target is **3336.8798**).
+- `N = 2 * n + 1` works with 8 hidden layers equal. It achieves R-squared score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
+- From 8 layers, the performance does not increase.
+- Still need more inverstigation to calibrate to pass the result of `Random Forest` (R-squared score **0.9403**).
