@@ -28,8 +28,8 @@ Number of nodes in each layer:
 
 However, some of others suggest to use other calculation such as at https://www.researchgate.net/post/How_to_decide_the_number_of_hidden_layers_and_nodes_in_a_hidden_layer :
 
-- Number of hidden node = (2 * input size) + 1 (by Irfan Majid)
-- Number of hidden node = (4 * n^2) + 3 / (n^2-8) (by Gnana Sheela and Deepa)
+- Number of hidden node = (2 * input size) + 1 (by **Irfan Majid**)
+- Number of hidden node = (4 * n^2) + 3 / (n^2-8) (by **Gnana Sheela and Deepa**)
 
 ## What to test or purpose of this test ? ##
 
