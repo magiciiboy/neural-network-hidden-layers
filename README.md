@@ -36,7 +36,7 @@ However, some of others suggest to use other calculation such as at https://www.
 - Whether keeping number of perception in each layers as suggested is as good as increase to a greater number of perceptrons.
 - Determine which calcualtion performs better on a semi-complicated dataset.
 
-Detail of experiments is presented in Jupyter note `NeuralNetworkModel`
+Detail of experiments is presented in Jupyter note `NeuralNetworkModel.ipynb`
 
 ## Dataset ##
 
@@ -119,6 +119,10 @@ Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6, 7
 
 ## Conclusion ##
 
-- `N = 2 * n + 1` works with 8 hidden layers. It achieves R-squared score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
+- `N = 2 * n + 1` works with 8 hidden layers. It achieves `R-squared` score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
 - From 8 layers, the performance does not increase.
 - Although, the result is acceptable, it still needs more inverstigation to calibrate to pass the result of `Random Forest` (R-squared score **0.9403**).
+
+## Updated ##
+
+- Use Tensorflow, Keras network can increase performance. `R-squared` scores **0.9340**, `MSE` is as low as **1277.7636**. Detail is in Jupyter note `DNNWithTensorFlow.ipynb`.
