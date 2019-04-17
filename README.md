@@ -9,4 +9,12 @@ variable sizes.
 
 ## Experiment #1: ##
 
+Use: 2 hidden layers, prior layer varies, later one has 2/3 size of input + output
+
 ![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp1.png?raw=true)
+
+## Experiment #2: ##
+
+Use: 2 hidden layers, prior layer has 2/3 size of input + output, later one varies
+
+![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp2.png?raw=true)
