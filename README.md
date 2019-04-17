@@ -59,6 +59,7 @@ In fact, for this dataset, the performance peak when using `Random Forest`:
 
 - `R-squared`: 0.9916119677601978
 - `R-squared (Pred)`: 0.9403197838814934
+- `MSE`: 1995.71
 
 ## Experiment with variable number of nodes in each hidden layer ##
 
@@ -119,10 +120,10 @@ Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6, 7
 
 ## Conclusion ##
 
-- `N = 2 * n + 1` works with 8 hidden layers. It achieves `R-squared` score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
+- `N = 2 * n + 1` (N=43, input=19) works with 8 hidden layers. It achieves `R-squared` score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
 - From 8 layers, the performance does not increase.
 - Although, the result is acceptable, it still needs more inverstigation to calibrate to pass the result of `Random Forest` (R-squared score **0.9403**).
 
 ## Updated ##
 
-- Use Tensorflow, Keras network can increase performance. `R-squared` scores **0.9340**, `MSE` is as low as **1277.7636**. Detail is in Jupyter note `DNNWithTensorFlow.ipynb`.
+- Use Tensorflow, Keras network can increase performance. `R-squared` scores **0.9340**, `MSE` is as low as **1277.7636**. Detail is in Jupyter note `DNNWithTensorFlow.ipynb`. This network is the same as the one used in MLPRegressor in `sklearn` with 8 hidden layers and 43 perceptrons each layer. This network achieves a better `MSE` on the comparison with the result of `RandomForest`.
