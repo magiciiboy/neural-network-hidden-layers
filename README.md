@@ -7,6 +7,27 @@ I was inspired by the post by Jeff Heaton at https://www.heatonresearch.com/2017
 I conducted some experiment to extract the insight of performance corresponding with 
 variable sizes.
 
+## What is recommended? ##
+
+Number of Layers
+
+| Num Hidden Layers	| Result |
+|-------------------|--------|
+|none | Only capable of representing linear separable functions or decisions. |
+| 1	  | Can approximate any function that contains a continuous mapping from one finite space to another. |
+| 2   | Can represent an arbitrary decision boundary to arbitrary accuracy with rational activation functions and can approximate any smooth mapping to any accuracy. |
+| >2  | Additional layers can learn complex representations (sort of automatic feature engineering) for layer layers. |
+
+Number of nodes in each layer:
+
+- The number of hidden neurons should be between the size of the input layer and the size of the output layer.
+- The number of hidden neurons should be 2/3 the size of the input layer, plus the size of the output layer.
+- The number of hidden neurons should be less than twice the size of the input layer.
+
+## What to test ? ##
+
+Whether keeping number of perception in each layers as suggested is as good as increase to a greater number of perceptrons. 
+
 ## Dataset ##
 
 To run the experiments, I used a dataset of Bike-Sharing which has been preprocessed:
@@ -18,9 +39,9 @@ To run the experiments, I used a dataset of Bike-Sharing which has been preproce
 After trying some random choice of hidden layers. I come up with the best selection of (160, 80, 40).
 This structure generates following results:
 
-- R-squared::0.9106457314393288
-- Pred R-squared::0.9002130472935612
-- MSE::3336.8798909376187
+- `R-squared`: 0.9106457314393288
+- `R-squared (Pred)`: 0.9002130472935612
+- `MSE`: 3336.8798909376187
 
 ## Experiment with variable number of nodes in each hidden layer ##
 
@@ -28,7 +49,7 @@ I was trying to looking for a simpler version of structure which can generate th
 
 ### Experiment #1: ###
 
-Use: 2 hidden layers, prior layer varies, later one has 2/3 size of input + output
+Use: 2 hidden layers, prior layer varies in range(output, 2 * input), later one has 2/3 size of input + output
 
 Result:
 
@@ -36,7 +57,7 @@ Result:
 
 ### Experiment #2: ###
 
-Use: 2 hidden layers, prior layer has 2/3 size of input + output, later one varies
+Use: 2 hidden layers, prior layer has 2/3 size of input + output, later one varies in range (output, 2 * input)
 
 Result:
 
@@ -45,3 +66,9 @@ Result:
 On the same scale
 
 ![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp2b.png?raw=true)
+
+### Experiment #3: ###
+
+Use: 2 hidden layers, all layers have more number of nodes than recommended
+
+![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp3.png?raw=true)
