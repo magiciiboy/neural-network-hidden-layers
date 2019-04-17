@@ -9,6 +9,8 @@ variable sizes.
 
 ## What is recommended? ##
 
+As recommended by Jeff Heaton, there are some rules to determine the number of hidden layers and number of nodes in each layers as follows:
+
 Number of Layers
 
 | Num Hidden Layers	| Result |
@@ -24,9 +26,17 @@ Number of nodes in each layer:
 - The number of hidden neurons should be 2/3 the size of the input layer, plus the size of the output layer.
 - The number of hidden neurons should be less than twice the size of the input layer.
 
-## What to test ? ##
+However, some of others suggest to use other calculation such as at https://www.researchgate.net/post/How_to_decide_the_number_of_hidden_layers_and_nodes_in_a_hidden_layer :
 
-Whether keeping number of perception in each layers as suggested is as good as increase to a greater number of perceptrons. 
+- Number of hidden node = (2 * input size) + 1 (by Irfan Majid)
+- Number of hidden node = (4 * n^2) + 3 / (n^2-8) (by Gnana Sheela and Deepa)
+
+## What to test or purpose of this test ? ##
+
+- Whether keeping number of perception in each layers as suggested is as good as increase to a greater number of perceptrons.
+- Determine which calcualtion performs better on a semi-complicated dataset.
+
+Detail of experiments is presented in Jupyter note `NeuralNetworkModel`
 
 ## Dataset ##
 
@@ -72,3 +82,10 @@ On the same scale
 Use: 2 hidden layers, all layers have more number of nodes than recommended
 
 ![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp3.png?raw=true)
+
+
+### Experiment #4: ###
+
+Use: 2 hidden layers, all layers have more number of nodes than recommended
+
+![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp4.png?raw=true)
