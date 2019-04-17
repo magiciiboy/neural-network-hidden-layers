@@ -63,7 +63,7 @@ Use: 2 hidden layers, prior layer varies in range(output, 2 * input), later one 
 
 Result:
 
-![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp1.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp1.png?raw=true)
 
 ### Experiment #2: ###
 
@@ -71,27 +71,45 @@ Use: 2 hidden layers, prior layer has 2/3 size of input + output, later one vari
 
 Result:
 
-![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp2.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp2.png?raw=true)
 
 On the same scale
 
-![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp2b.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp2b.png?raw=true)
 
 ### Experiment #3: ###
 
 Use: 2 hidden layers, all layers have more number of nodes than recommended
 
-![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp3.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp3.png?raw=true)
 
 
 ### Experiment #4: ###
 
 Use: 2 hidden layers, all layers have more number of nodes than recommended
 
-![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp4.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp4.png?raw=true)
 
 ### Experiment #5: ###
 
 Use: 2 hidden layers, suggested by **Irfan Majid**
 
-![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp5.png?raw=true)
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp5.png?raw=true)
+
+
+### Experiment #6: ###
+
+Use: 2 hidden layers, suggested by **Gnana Sheela and Deepa**
+
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp6.png?raw=true)
+
+### Experiment #7: ###
+
+Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6
+
+![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp7C.png?raw=true)
+
+
+## Comments ##
+
+- `N = 2 * n + 1` works with number of hidden layers equal to 5
