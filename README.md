@@ -89,3 +89,9 @@ Use: 2 hidden layers, all layers have more number of nodes than recommended
 Use: 2 hidden layers, all layers have more number of nodes than recommended
 
 ![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp4.png?raw=true)
+
+### Experiment #5: ###
+
+Use: 2 hidden layers, suggested by **Irfan Majid**
+
+![alt text](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp5.png?raw=true)
