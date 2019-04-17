@@ -110,6 +110,6 @@ Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6
 ![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp7C.png?raw=true)
 
 
-## Comments ##
+## Conclusion ##
 
-- `N = 2 * n + 1` works with number of hidden layers equal to 5
+- `N = 2 * n + 1` works with number of hidden layers equal to 5. It achieves R-squared score at **0.8926** (target is **0.9002**). `MSE` is **3588.2767** (target is **3336.8798**).
