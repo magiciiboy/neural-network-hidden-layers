@@ -40,7 +40,7 @@ Detail of experiments is presented in Jupyter note `NeuralNetworkModel.ipynb`
 
 ## Dataset ##
 
-To run the experiments, I used a dataset of Bike-Sharing. This dataset has more than 17.000 observations with 19 extracted features.
+To run the experiments, I used a dataset of Bike-Sharing. This dataset has more than 17.000 observations with 19 extracted features. This is a cross-sectional and longitudinal data. Therefore, I would like to use a relative deep network to extract its features.
 
 This dataset has been preprocessed:
 
@@ -113,14 +113,14 @@ Use: 2 hidden layers, suggested by **Gnana Sheela and Deepa**
 
 ### Experiment #7: ###
 
-Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6, 7
+Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
 
 ![Experiment of Determining the Number of Hidden Layers](https://github.com/magiciiboy/neural-network-hidden-layers/blob/master/output/exp7F.png?raw=true)
 
 
 ## Conclusion ##
 
-- `N = 2 * n + 1` (N=43, input=19) works with 8 hidden layers. It achieves `R-squared` score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
+- `N = 2 * n + 1` (N=43, input=19) works with **8 hidden layers**. It achieves `R-squared` score at **0.9012** (target is **0.9002**). `MSE` is **3302.2312** (target is **3336.8798**).
 - From 8 layers, the performance does not increase.
 - Although, the result is acceptable, it still needs more inverstigation to calibrate to pass the result of `Random Forest` (R-squared score **0.9403**).
 
