@@ -126,4 +126,5 @@ Use: N = 2 * n + 1, however increase number of hidden layers to 3, 4, 5, 6, 7, 8
 
 ## Updates & Improvements ##
 
-- Use Tensorflow, Keras network can increase performance. `R-squared` scores **0.9340**, `MSE` is as low as **1277.7636**. Detail is in Jupyter note `DNNWithTensorFlow.ipynb`. This network is the same as the one used in MLPRegressor in `sklearn` with 8 hidden layers and 43 perceptrons each layer. This network achieves a better `MSE` on the comparison with the result of `RandomForest`.
+- Use Tensorflow, Keras network can increase performance. `R-squared` scores **0.9340**, `MSE` is as low as **1277.7636**. Detail is in Jupyter note `DNNWithTensorFlow.ipynb`. 
+- This network is the same as the one used in MLPRegressor in `sklearn` with 8 hidden layers and 43 perceptrons each layer. This network achieves a better `MSE` on the comparison with the result of `RandomForest`.
